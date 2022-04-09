@@ -1348,6 +1348,10 @@ input, #input_tag{
   font-size: clamp(14px, 16px, 16px);  
 }
 
+#cmd_input{
+  background-color: #272528;
+}
+
 
 /* for weather  */
 
