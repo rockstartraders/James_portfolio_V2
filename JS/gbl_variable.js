@@ -351,10 +351,15 @@ var skills = `
 <p id="projects_made_header">I do have a lot of computer related skills still that I failed to link here which I'm willing to discuss when needed and ask. <br></p>
 
 <p id="projects_made_pseinfo"><span id="main_title_color_appname">Administration</span> (Windows Server 2012 and 2016).</p>
+<br id="linebreak_notvisible">
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">Linux Administration</span></p>
+<br id="linebreak_notvisible">
 <p id="projects_made_jconverter"><span id="main_title_color_appname">Computer Troubleshooting </span></p>
+<br id="linebreak_notvisible">
 <p id="app_nameprojects_made_alt2" class="weather_not_to_display_in_mobile"><span id="main_title_color_appname">Networking</span></p>
+<br id="linebreak_notvisible">
 <p id="app_nameprojects_made_alt2shell"><span id="main_title_color_appname">Programming and Application Development</span> (See <span id="main_title_color_appname">projects</span> or <span id="main_title_color_appname">github</span> command to view some of my works).</p>
+<br id="linebreak_notvisible">
 <p id="app_nameprojects_made_psecli"><span id="main_title_color_appname">Cooking</span> (Not tech relevant but this is my favorite skill among others 😁).</p>   
 <br>
 
