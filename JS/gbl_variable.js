@@ -354,7 +354,7 @@ var skills = `
 <br id="linebreak_notvisible">
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">Linux Administration</span></p>
 <br id="linebreak_notvisible">
-<p id="projects_made_jconverter"><span id="main_title_color_appname">Computer Troubleshooting </span></p>
+<p id="projects_made_jconverter"><span id="main_title_color_appname">Computer Troubleshooting </span> (Software and hardware).</p>
 <br id="linebreak_notvisible">
 <p id="app_nameprojects_made_alt2" class="weather_not_to_display_in_mobile"><span id="main_title_color_appname">Networking</span></p>
 <br id="linebreak_notvisible">
