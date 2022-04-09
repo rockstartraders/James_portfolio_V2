@@ -1,0 +1,1393 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #282c34;  */
+    /* background-color: #282A2E; */
+    /* overflow-x: hidden !important; */
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+
+
+body{ 
+    /* text-shadow: 0 0 4px #C8C8C8 !important;    */   
+    /* overflow-x: hidden !important; */
+     overflow-x: hidden !important;
+      /* background-color: #282c34;  */
+      background-color: #272528; 
+     
+     /* this is for bottom safe area   */
+     
+     margin-bottom: 12vh !important;  
+ 
+
+}  
+
+
+/* This is for onload event for GEO Locate */
+
+#lat, #long{
+  font-size: 0;
+  color: transparent;
+}
+
+
+  
+ /* Not Visible line break  */
+
+ #linebreak_notvisible{
+   display: none;
+ }
+
+
+ /* Emoji CSS */
+ #emoji{
+   font-size: 25px;
+ }
+
+
+
+/* CRT monitor grain */
+  #banner::after {   
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100vw;
+    height: 100vh; */
+
+    width: 100vw;
+    height: 12vh;
+    background: repeating-linear-gradient(0deg, rgba(40, 44, 52, 0.15), rgba(40,44,52, 0.15) 1px, transparent 1px, transparent 2px);
+    pointer-events: none;
+  }
+
+  
+/* this is for banner */
+
+
+#banner_container{
+    margin-top: 20px !important;
+    margin-left: 14px;   
+}
+
+#banner{
+  
+   text-align: left;
+   overflow-wrap: break-word;   
+    /* color: #C8C8C8; */
+    color: #FDFBF9;
+    /* font-family: 'Righteous', cursive; */
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Monoton', monospace !important;
+    /* font-size: clamp(35px, 4.2vw, 5vw);  */
+    font-size: 75px;
+    letter-spacing: 0.3vw;
+    font-weight: 400;
+      
+}
+
+#banner_help{  
+    padding-top: 15px !important; 
+    line-height: 25px;
+    color: #FDFBF9;
+    /* font-family: 'Inconsolata', monospace; */   
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 500 !important;
+    letter-spacing: 3px;
+    /* font-size: 0.9375vw; */
+    /* font-size: clamp(14px, 0.9475vw, 0.97vw); */
+    font-size: clamp(14px, 16px, 16px);
+
+}
+
+/* END of  banner */
+
+
+  .container_terminal{
+      margin-top: 15px;
+      margin-left: 14px;
+  }
+
+  #command_result{
+    margin-top: 15px;  
+    margin-left: 14px;
+  }
+
+ 
+/* input */
+input, #input_tag{
+   /* background-color: #282c34;  */
+   background-color: #272528;
+    border:0;
+    outline:0;
+    width: 50%;
+    caret-color: #C8C8C8;
+    color: #FDFBF9;
+    letter-spacing: 2px;
+    font-size: clamp(14px, 16px, 16px);
+    outline:none!important;   
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 500;
+
+}
+
+
+
+/* result next to input on top  */
+#input_white_color, #result{
+    color: #FDFBF9;
+    outline:none!important;   
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* font-size: clamp(14px, 0.9475vw, 0.97vw); */
+    font-size: clamp(14px, 16px, 16px);
+}
+
+/* Blinking cursor */
+input:focus { 
+    color: #FDFBF9;
+    outline:none!important;   
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: clamp(14px, 16px, 16px);
+}
+
+/* terminal text */
+#lbl_cmd{
+   
+    /* color: #FFDB0A !important;   */
+    
+    color: #46CB18 !important;  
+    /* font-family: 'Inconsolata', monospace; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Azeret Mono', monospace;
+    font-weight: 600;
+    letter-spacing: 2px;    
+    font-size: clamp(14px, 16px, 16px);
+
+}
+
+#copyright_sign{
+    color: #FDFBF9;
+    font-weight: 500;   
+    /* font-size: clamp(18px,  1.3020833333333333vw, 1.40vw); */
+    font-size: clamp(14px, 18px, 18px);
+}
+
+
+
+
+
+/* CRT FLICKER EFFECT WITH HELP OF http://aleclownes.com/2017/02/01/crt-display.html */
+
+@keyframes blinker {
+  0% {
+    opacity: 0.27861;
+  }
+  5% {
+    opacity: 0.34769;
+  }
+  10% {
+    opacity: 0.23604;
+  }
+  15% {
+    opacity: 0.90626;
+  }
+  20% {
+    opacity: 0.18128;
+  }
+  25% {
+    opacity: 0.83891;
+  }
+  30% {
+    opacity: 0.65583;
+  }
+  35% {
+    opacity: 0.67807;
+  }
+  40% {
+    opacity: 0.26559;
+  }
+  45% {
+    opacity: 0.84693;
+  }
+  50% {
+    opacity: 0.96019;
+  }
+  55% {
+    opacity: 0.08594;
+  }
+  60% {
+    opacity: 0.20313;
+  }
+  65% {
+    opacity: 0.71988;
+  }
+  70% {
+    opacity: 0.53455;
+  }
+  75% {
+    opacity: 0.37288;
+  }
+  80% {
+    opacity: 0.71428;
+  }
+  85% {
+    opacity: 0.70419;
+  }
+  90% {
+    opacity: 0.7003;
+  }
+  95% {
+    opacity: 0.36108;
+  }
+  100% {
+    opacity: 0.24387;
+  }
+}
+
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  5% {
+    text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  10% {
+    text-shadow: 0.02956275843481219px 0 1px rgba(0,30,255,0.5), -0.02956275843481219px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  15% {
+    text-shadow: 0.40218538552878136px 0 1px rgba(0,30,255,0.5), -0.40218538552878136px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  20% {
+    text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  25% {
+    text-shadow: 1.6125630401149584px 0 1px rgba(0,30,255,0.5), -1.6125630401149584px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  30% {
+    text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0,30,255,0.5), -3.896914047650351px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0,30,255,0.5), -3.870905614848819px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0,30,255,0.5), -2.231056963361899px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0,30,255,0.5), -0.08084290417898504px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  55% {
+    text-shadow: 2.3758461067427543px 0 1px rgba(0,30,255,0.5), -2.3758461067427543px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  60% {
+    text-shadow: 2.202193051050636px 0 1px rgba(0,30,255,0.5), -2.202193051050636px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0,30,255,0.5), -2.8638780614874975px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0,30,255,0.5), -0.48874025155497314px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0,30,255,0.5), -1.8948491305757957px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0,30,255,0.5), -0.0833037308038857px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0,30,255,0.5), -0.09769827255241735px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0,30,255,0.5), -3.443339761481782px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+}
+
+/* CRT Effect banner only  */
+#banner{
+  animation: textShadow 1.6s infinite;
+} 
+
+#banner::after {
+  
+  animation: blinker 1.5s infinite;
+}
+
+
+/* End of CRT Effect for banner  */
+
+
+
+/* This is the CSS for output or Command result 
+All output will be via innerHTML */
+
+#main_title_color{
+  color: #FFDB0A !important;    
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+
+
+#help_container, #app_made{
+  margin-left: 10px !important;
+  margin-top: 20px !important; 
+}
+
+#help_banner{ 
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+#about_help{
+  margin-top: 14px;
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+#programming_help, #projects_help, #github_help, #email_help, #skills_help, #extra_help, #cv_help, #exit_help, #help_footer_note, #sweetalert{
+  margin-top: 14px;
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+
+
+#github_output{
+  margin-top: 10px;
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+
+/* This is for break lines with nice line heights */
+
+#cv_output, #generic_unix_output, #email_output, #app_name, #tech_used, #github_visit{
+  margin-top: 14px;
+  color: #FDFBF9;
+  outline:none!important;   
+  line-height: 25px !important;
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: clamp(14px, 16px, 16px);
+
+}
+
+
+
+/* CSS for IMG tag and  projects  */
+
+#main_title_color_appname{
+  color: #FFDB0A !important;    
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: clamp(16px, 18px, 18px);
+}
+
+#previewtxt{
+  color: #FDFBF9;
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+
+
+.my_pse_info, .jengs_converter, .alt2, .net2shell, .pse-cli,.my_cve,.hash_check, .james_media_player{
+  
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+
+
+
+/* Programming Section */
+
+#programming_cmd{
+  margin-left: 8px !important;
+  margin-top: 20px !important; 
+}
+
+#programming_bannertxt{
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);
+}
+
+
+#webtechnology, #scripting_languages, #db_and_versionctrl, #designsystem, #appdevelopment, #others, #framework_no_icon{
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);
+  
+}
+
+
+#framework_no_icon:hover{
+  color: #f5ba93;  
+}
+
+
+
+#programming_icons{
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+#others_bottom_txt{
+
+  margin-top: 2%;  
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+}
+
+
+
+/* Icons */
+#html5_icon, #css3_icon, #jquery_icon, #python_icon{   
+    font-size: 10vh;    
+    cursor: pointer;
+}
+
+#js_icon{
+  font-size: 8vh;    
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+#nodejs_icon{
+ 
+  font-size: 13vh;   
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+#npm_icon{
+  font-size: 11vh;   
+  cursor: pointer; 
+}
+
+#MD_icon{
+  font-size: 10vh;    
+  color: #FDFBF9;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#bash_icon{
+  margin-left: 10px;
+  font-size: 9vh;    
+  color: #FDFBF9;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#git_icon{
+  font-size: 12vh;  
+  margin-right: 15px;  
+  cursor: pointer;
+}
+
+#materialui_icon{
+  font-size: 8vh;  
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#tailwind_icon{
+  margin-left: 35px;
+  font-size: 13vh;  
+  cursor: pointer; 
+  
+}
+
+#dart_icon{
+  
+  font-size: 10vh;  
+  margin-left: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#flutter_icon{
+  font-size: 4vh;   
+  cursor: pointer; 
+}
+
+#debian_icon{
+  font-size: 9vh;  
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#electron_icon{
+  font-size: 10vh; 
+  font-weight: 500; 
+  color:  #0881d1;
+  cursor: pointer;
+}
+
+
+/* for FLutter icon which is Stubborn */
+#flutter_margin{
+  margin-top: -70px;
+  margin-left: 120px;
+
+}
+
+
+
+/* IMG and not Icons */
+#python_icon{  
+  width:  5%;
+  height: 5%;
+  cursor: pointer;
+}
+
+#mysql_icon{
+  width:  7%;
+  height: 7%;
+  margin-left: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+
+#linux_icon{
+  margin-top: 8px;
+  width:  5%;
+  height: 5%;
+  margin-left: 10px;
+  cursor: pointer;
+  
+}
+
+/* End of Programming section  */
+
+
+
+/* About section / Neofetch like format */
+
+/* main container for about  */
+#about_container{
+  margin-left: 14px;
+}
+
+
+/* tag for image */
+#my_img{
+  float: left !important;
+  margin-top: 75px;
+  height: 10%;
+  width: 15%;
+  /* filter: blur(3px); */
+  image-rendering: pixelated;
+  border-radius: 50%;
+}
+
+
+/* Text next to image */
+
+#about_text_right{
+  margin-left: 18% !important;
+}
+
+#my_name{
+  /* color: #FDFBF9; */
+  color: #FFDB0A;  
+  /* color: #f5ba93; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-top: 8px;
+  font-size: 18px;
+
+}
+
+/* About Hightlight Neofetch Style */
+
+#about_highlight{
+  color: #f5ba93;
+}
+
+#my_separator{
+   color: #FDFBF9;  
+   font-family: 'Azeret Mono', monospace;   
+   letter-spacing: 2px;   
+}
+
+
+#my_origin, #my_nationality, #my_email, #my_employed{
+   color: #FDFBF9;  
+   /* color: #f5ba93; */
+   font-family: 'Azeret Mono', monospace;
+   font-weight: 500;
+   letter-spacing: 2px;
+   padding-top: 8px;
+    
+}
+
+#my_email:hover{
+  color: #d1f2b4;
+}
+
+
+/* Color below neofetch like  */
+
+#primary_color{
+  background-color: #f5ba93;
+  width: 5%;
+  height: 10%;
+}
+
+#second_color{
+  background-color: #e08733;
+  width: 5%;
+  height: 10%;
+}
+
+#third_color{
+  background-color: #f9fde8;
+  width: 5%;
+  height: 10%;
+}
+
+#fourth_color{
+  background-color: #d0b377;
+  width: 5%;
+  height: 10%;
+}
+
+#fifth_color{
+  background-color: #5166cb;
+  width: 5%;
+  height: 10%;
+}
+
+#sixth_color{
+  background-color: #cb5c57;
+  width: 5%;
+  height: 10%;
+}
+
+#seventh_color{
+  background-color: #d1f2b4;
+  width: 5%;
+  height: 10%;
+}
+
+#eighth_color{
+  background-color: #6d6b5c;
+  width: 5%;
+  height: 10%;  
+}
+
+
+
+/* Animation blinking for email under about section */
+
+
+
+ #my_email {
+	-webkit-animation: bounce-right 1.2s 1s 3 alternate both;
+	        animation: bounce-right 1.2s 1s 3 alternate both;
+}
+
+@-webkit-keyframes bounce-right {
+  0% {
+    -webkit-transform: translateX(48px);
+            transform: translateX(48px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateX(6.5px);
+            transform: translateX(6.5px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-right {
+  0% {
+    -webkit-transform: translateX(48px);
+            transform: translateX(48px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateX(26px);
+            transform: translateX(26px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateX(6.5px);
+            transform: translateX(6.5px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87%,
+  98% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+/* This is for Projects Commands  */
+
+
+#projects_made, #ip_info{
+  margin-left: -25px !important;;
+  margin-top: 20px !important; 
+}
+
+
+#help_container, #app_made{
+  margin-left: 10px !important;
+  margin-top: 20px !important; 
+}
+#projects_made_header{
+  
+  padding-left: 2% !important; 
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  line-height: 25px !important;
+}
+
+
+#projects_made_pseinfo{
+  
+  margin-top: 35px !important; 
+  padding-left: 2% !important; 
+  margin-bottom: 5px;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  line-height: 25px !important;
+}
+
+
+#projects_made_jconverter, #app_nameprojects_made_alt2, #app_nameprojects_made_alt2shell, #app_nameprojects_made_psecli, #app_nameprojects_made_hashcheck, #app_nameprojects_made_mycve, #app_nameprojects_made_jmplayer{
+  padding-left: 2% !important; 
+  margin-bottom: 5px;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  line-height: 25px !important;
+}
+
+#app_nameprojects_made_footer_note{
+
+  margin-top: 50px !important;
+  padding-left: 2% !important;   
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  
+}
+
+
+/* For projects Made section  */
+
+#projects_made_jconverter, #app_nameprojects_made_alt2, #app_nameprojects_made_alt2shell, #app_nameprojects_made_psecli, #app_nameprojects_made_hashcheck, #app_nameprojects_made_mycve, #app_nameprojects_made_jmplayer{
+
+  
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  line-height: 25px !important;
+
+}
+
+
+
+/* this is for IP address Info section || Extra commands */
+
+
+#ip_info{
+  margin-left: -23px !important;
+  margin-top: 20px !important;
+}
+
+#ip_header, #ip_title{
+  padding-left: 2% !important; 
+  margin-bottom: 5px;
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  line-height: 25px !important;
+}
+
+
+#important{
+  color: #f5ba93;
+}
+
+#ipinfocontainer, #ip_header, #ip_info_2{
+  /* display: none; */
+  /* margin-left: -7px !important; */
+  margin-left: -18px !important;
+  margin-top: 20px !important;
+}
+
+
+
+
+/* CSS for Quote Command and Result */
+
+#quote_container, #quote_container2{
+  margin-left: -23px !important;
+  margin-top: 20px !important;
+}
+
+#main_quote{
+  padding-left: 2% !important; 
+  margin-right: 50%;
+  margin-bottom: 5px;
+  line-height: 25px;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+}
+
+#author{
+   margin-right: 15%; 
+  /* text-align: end;   */
+  text-align: center;
+  /* padding-left: 5% !important; 
+  margin-bottom: 5px; */
+  color: #FDFBF9;
+  outline:none!important;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-style: italic;
+  font-size: clamp(14px, 18px, 18px);  
+}
+
+
+
+/* CSS For Weather */
+
+/* #weather_div2{
+  position: relative;
+
+} */
+
+#weather_icon{
+  height: 400px;
+  width: auto;
+  
+}
+
+#weather_status_description{
+  text-align: left;
+  text-transform: capitalize;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: -65px; 
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;  
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+#weather_temp_container{ 
+  margin-top: -19%;
+  margin-left: 25%;
+  margin-right: 60%;  
+
+}
+
+#weather_temp{  
+  float: right;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 150px;
+}
+
+
+
+#weather_humidity, #weather_coordinate, #weather_country{
+  padding-top: 5px;
+  margin-left: -65px;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;  
+  letter-spacing: 3px;
+  font-size: clamp(14px, 16px, 16px);
+  
+}
+
+
+/* Indentation for coord longitude. */
+
+#coord_indent{  
+  padding-left: 95px;   
+}
+
+
+
+
+
+
+
+
+
+/* CSS for SWEETALERT2 */
+/* reference https://sweetalert2.github.io/#icons */
+
+.swal2-popup{
+ 
+  background-color: #282c34; 
+  color: #FDFBF9;  
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+ 
+}
+
+#swal2-title{
+  color: #FDFBF9;  
+  /* font-family: 'Inconsolata', monospace;   */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 3px !important;
+}
+
+#swal2-html-container{
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  color: #FDFBF9; 
+  line-height: 25px !important;
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* this is fr the sweetalert btn  */
+
+.swal2-confirm{
+  color: #FDFBF9;   
+  /* font-family: 'Inconsolata', monospace; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* this is for ICON for info */
+
+.swal2-icon.swal2-info {
+  border-color: #48A14D;  
+  color: #FDFBF9;   
+
+}
+
+#swal-input1, #swal2-input {
+ 
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 3px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query Section  */
+
+
+
+ @media (min-width: 320px) and (max-width: 480px) {
+
+  body{
+    margin-right: 5%;
+  }
+
+  #linebreak_notvisible{
+    display: block;
+  }
+ 
+.my_pse_info{
+  width: 85%;
+}
+
+  #help_container, #projects_made{
+    margin-left: 0px !important;
+    margin-top: 20px !important; 
+  }
+
+
+  #banner {
+    
+    color: #FDFBF9;    
+    font-family: 'Monoton', monospace !important;
+    font-size: 14vw;
+    letter-spacing: 0.3vw;
+    font-weight: 500;
+    line-height: 9vh;
+}
+
+input, #input_tag{
+  background-color: #282c34; 
+   border:0;
+   outline:0;
+   width: 100%;
+   caret-color: #C8C8C8;
+   color: #FDFBF9;
+   letter-spacing: 2px;
+   font-size: clamp(14px, 16px, 16px);
+   outline:none!important;   
+   /* font-family: 'Inconsolata', monospace; */
+   /* font-family: 'Poppins', sans-serif; */
+   font-family: 'Azeret Mono', monospace;
+   font-weight: 500;
+
+}
+
+#programming_icons{
+  margin-left: 0px !important;
+  margin-top: 20px !important; 
+}
+
+#programming_cmd {
+  margin-left: 0 !important;
+  margin-top: 20px !important;
+}
+
+/* IMG and not Icons */
+#python_icon{  
+  width:  20%;
+  height: 20%;
+}
+
+#mysql_icon{
+  width:  20%;
+  height: 20%;
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+
+#flutter_margin{
+  margin-top: -13%;
+  margin-left: 25%;
+}
+
+#linux_icon{
+  margin-top: 8px;
+  width:  9vh;
+  height: 9vh;
+  margin-left: 10px;
+  
+}
+
+#framework_no_icon{
+  padding-left: 17px;
+  text-indent: -19px;
+}
+
+#flutter_icon { 
+  display: none;
+}
+
+  
+    /* For mobile remove/reduce margin left */
+   #app_made{
+     margin-left: 8px !important;
+   }
+
+
+
+   #my_img{
+    display: none;
+  }
+  
+  #about_container{
+    margin-left: 0px;
+  }
+
+  
+  #about_text_right{
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+  }
+ 
+  #eighth_color, #seventh_color{
+   display: none;
+  }
+
+
+  #ipinfocontainer, #ip_header, #ip_info_2, #quote_container2 {  
+    margin-left: -5px !important;
+    margin-top: 20px !important;
+    font-size: clamp(14px, 16px, 16px);
+}
+
+
+#main_quote{
+  padding-left: 2% !important; 
+  margin-right: 0;
+  margin-bottom: 5px;
+  line-height: 25px;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-size: clamp(14px, 16px, 16px);  
+  justify-content: space-evenly;
+}
+
+#author{
+  
+  text-align: left;
+ 
+  color: #FDFBF9;
+  outline:none!important;   
+ 
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  font-style: italic;
+  font-size: clamp(14px, 16px, 16px);  
+}
+
+
+/* for weather  */
+
+/* not to display WEATHER COMMAND AND INFO ON MOBILE */
+/* Having issues with responsiveness though */
+#weather_div2, .weather_not_to_display_in_mobile{
+  display: none;
+}
+
+/* #weather_div2{
+  margin-left: 0%;
+}
+
+#weather_icon{
+  height: auto;
+  width: auto;
+  
+}
+
+
+#weather_temp{  
+  float: left;
+  color: #FDFBF9;
+  outline:none!important;    
+  font-family: 'Azeret Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+#weather_country{
+  white-space: nowrap;
+}
+
+#coord_indent{  
+  padding-left: 0;   
+} */
+
+  
+ }  
+ /* end of media query  */
+
+
