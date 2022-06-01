@@ -13,7 +13,7 @@ document.onmousedown = (e) => {
     // geo_location();   
     container_terminal.innerHTML=`
     <label id="lbl_cmd">jp_portfolio<span id="copyright_sign">&#169;</span>2022:~> </label>
-    <input id="cmd_input" type="text" autofocus spellcheck="false"/>`;
+    <input id="cmd_input" type="text" autofocus spellcheck="false" autocomplete="off"/>`;
 
    
   } // onload event
