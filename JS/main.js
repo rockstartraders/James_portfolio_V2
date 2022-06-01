@@ -190,23 +190,28 @@ document.onmousedown = (e) => {
               confirmButtonText: 'Send',        
               preConfirm: () => {
                 
-                  var textarea_email = document.getElementById('swal2-input').value;
-              
+                var templateParams = {
+                  from_name: visitors_email,
+                  message: document.getElementById('swal2-input').value
+              };
 
+                // OLD FUNCTION AND NO LONGER WORKING
+                // var textarea_email = document.getElementById('swal2-input').value;
+                // email sending function using smtp JS                                   
 
-                  // email sending function using smtp JS                                   
-
-                Email.send({                        
-               
+                //Email.send
                    
-                    // SecureToken: "34022397-ca6a-49c9-9034-26fadc6ef4cb",     // Working from mailtrap                  
+                  //
+                    // SecureToken: "34022397-ca6a-49c9-9034-26fadc6ef4cb",     // Working from mailtrap ==> no more                  
                     // SecureToken: "3800d57c-de68-4815-927d-b4ab65f502c3",    // new gmail account     
-                    SecureToken: "34022397-ca6a-49c9-9034-26fadc6ef4cb", // this is mail trap because Gmail no longer works https://mailtrap.io/inboxes  
-                    To : 'jamespaulespea@gmail.com',
-                    From : 'espenajameswebsite@gmail.com',
-                    Subject : "Message from your Portfolio",
-                    Body :  "<br><br><br>"+ "Message from: " + visitors_email + "<br><br>" + "Message is:"+ "<br>" + textarea_email
-                }).then(function(){
+                    // SecureToken: "ef1dd425-64f1-49ec-bfcc-e55533fa0006", // this is elastic email / https://elasticemail.com/account#/settings/new/create-smtp 
+                    // To : 'jamespaulespea@gmail.com',
+                    // From : 'espenajameswebsite@gmail.com',
+                    // Subject : "Message from your Portfolio",
+                    // Body :  "<br><br><br>"+ "Message from: " + visitors_email + "<br><br>" + "Message is:"+ "<br>" + textarea_email
+
+                // this is the new parameter using emailjs 
+                emailjs.send("Jeng","template_cb3pmcq", templateParams).then(function(){
 
                     Swal.fire({
                     position: 'center',
