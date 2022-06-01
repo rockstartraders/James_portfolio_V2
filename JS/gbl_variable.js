@@ -182,7 +182,14 @@ var james_media_player = `
 </div>
 `;  // end of james_media_player
 
-
+var centcal = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">centcal</span> - A simple percentage calculator I created for my Mom to make her computing work easy.</p>
+<br>  
+<p id="tech_used">New tab will open since this is a website.</p>   
+</div>
+`;  // end of james_media_player
 
 // Programing command
 
@@ -295,6 +302,7 @@ Example: <span id="main_title_color_appname">alt2</span></p><br>
 <p id="app_nameprojects_made_hashcheck"><span id="main_title_color_appname">hash-check</span> - Application that can detect/convert md5, sha1, sha256, sha356 and sha512 encryption.</p> 
 <p id="app_nameprojects_made_mycve"><span id="main_title_color_appname">my-cve</span> - Application to view CVE or Common Vulnerabilities and Exposures report.</p>       
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">jmplayer</span> - A simple media player for Windows.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">centcal</span> - A simple percentage calculator I created for my Mom.</p>
 <p id="app_nameprojects_made_footer_note">I still have a lot of projects not included here, Please feel free to visit my <span id="main_title_color">github</span> page for reference.</p>
 <br>
 </div> <!--End of projects_made div-->

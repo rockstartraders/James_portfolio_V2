@@ -259,7 +259,7 @@ document.onmousedown = (e) => {
          
       //_______________________________________________//  
     
-      case "alt2":  // Project ==> Jengs currency converter
+      case "alt2":  // Project ==> alt2
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${alt2}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -269,7 +269,7 @@ document.onmousedown = (e) => {
       break; 
     //_______________________________________________//  
           
-      case "net2shell":  // Project ==> Jengs currency converter
+      case "net2shell":  // Project ==> net2shell
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${net2shell}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -279,7 +279,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "psecli":
-      case "pse-cli":  // Project ==> Jengs currency converter
+      case "pse-cli":  // 
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${pse_cli}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -289,7 +289,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "hashcheck":
-      case "hash-check":  // Project ==> Jengs currency converter
+      case "hash-check":  
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${hash_check}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -301,7 +301,7 @@ document.onmousedown = (e) => {
       case "mycveinfo":
       case "my-cve-info":
       case "my-cve":
-      case "cve":  // Project ==> Jengs currency converter
+      case "cve":  // P
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${my_cve}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -313,9 +313,19 @@ document.onmousedown = (e) => {
      
       case "jmplayer": 
       case "jamesmediaplayer": 
-      case "james-media-player":  // Project ==> Jengs currency converter
+      case "james-media-player":  
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${james_media_player}</p>`;
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+        
+      //_______________________________________________//  
+
+      case "centcal":  
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${centcal}</p>`;
+      window.open("https://centcal.netlify.app/");
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
       break; 
