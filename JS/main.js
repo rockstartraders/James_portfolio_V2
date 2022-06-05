@@ -32,7 +32,9 @@ document.onmousedown = (e) => {
       var open_swal = Swal.isVisible();  //this will detrmine is Sweet alert pop up is open 
       if (open_swal === true) {
        console.log("There is an open Sweet Alert prompt.");  // console log the message.
-       document.querySelector(".swal2-confirm").click(); // will click the enter button
+
+       //==> remove so that users can format email and avoid auto send.
+      //  document.querySelector(".swal2-confirm").click(); // will click the enter button -
       } else {
         
       // Will run if no SWAL is open
