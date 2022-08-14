@@ -334,6 +334,30 @@ document.onmousedown = (e) => {
         
       //_______________________________________________//  
 
+      case "steg":  
+      case "steganography":
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${steg}</p>`;
+      window.open("https://basic-steganography.netlify.app/");
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+
+      //_______________________________________________//  
+
+        
+      //_______________________________________________//  
+
+      case "secret-conversation":        
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${secretconversation}</p>`;
+      window.open("https://secret-conversation.netlify.app/");
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+
+      //_______________________________________________//  
+
       
       case "programming":  // COmmand for programming
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>

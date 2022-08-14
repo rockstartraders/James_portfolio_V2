@@ -37,6 +37,7 @@ var help= `
         <br>  
         <p id="about_help"><span id="main_title_color">about</span>&emsp;-&emsp;Display a neofetch like information about myself.</p>  
         <p id="cv_help"><span id="main_title_color">cv</span>&emsp;-&emsp;Download a copy of my CV.</p>
+        <p id="exit_help"><span id="main_title_color">clear</span>&emsp;-&emsp;Clear output.</p> 
         <p id="email_help"><span id="main_title_color">email</span>&emsp;-&emsp;Send me an email.</p>
         <p id="github_help"><span id="main_title_color">github</span>&emsp;-&emsp;Will redirect you to my GITHUB Repository.</p>
         <p id="programming_help"><span id="main_title_color">programming</span>&emsp;-&emsp;Display all programming and other relevant languages and stuffs I know.</p>
@@ -189,7 +190,28 @@ var centcal = `
 <br>  
 <p id="tech_used">New tab will open since this is a website.</p>   
 </div>
-`;  // end of james_media_player
+`;  // end of centcal
+
+
+var steg = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">steg</span> - a.k.a Steganography is the technique of hiding secret data within an ordinary, non-secret, file or message (example is an Image) in order to avoid detection. </p>
+<br>  
+<p id="tech_used">New tab will open since this is a website.</p>   
+</div>
+`;  // end of Steganography
+
+
+var secretconversation = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">secret-conversation</span> - A simple web app that will convert Plain text value to an encrypted text and will convert back to Plain text if needed. </p>
+<br>  
+<p id="tech_used">New tab will open since this is a website.</p>   
+</div>
+`;  // end of Steganography
+
 
 // Programing command
 
@@ -303,6 +325,8 @@ Example: <span id="main_title_color_appname">alt2</span></p><br>
 <p id="app_nameprojects_made_mycve"><span id="main_title_color_appname">my-cve</span> - Application to view CVE or Common Vulnerabilities and Exposures report.</p>       
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">jmplayer</span> - A simple media player for Windows.</p>
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">centcal</span> - A simple percentage calculator I created for my Mom.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">secret-conversation</span> - A web app that will convert Plain text value to an encrypted text & vice versa.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">steg</span> - Hide secret message into an image.</p>
 <p id="app_nameprojects_made_footer_note">I still have a lot of projects not included here, Please feel free to visit my <span id="main_title_color">github</span> page for reference.</p>
 <br>
 </div> <!--End of projects_made div-->
@@ -387,3 +411,4 @@ var long = document.getElementById("long");
 var weathernow = `
 <div id="weather_"></div> 
 `;  // end of weather command
+
