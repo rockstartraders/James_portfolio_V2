@@ -12,7 +12,7 @@ document.onmousedown = (e) => {
 
     // geo_location();   
     container_terminal.innerHTML=`
-    <label id="lbl_cmd">jp_portfolio<span id="copyright_sign">&#169;</span>2022:~> </label>
+    <label id="lbl_cmd">jp_portfolio<span id="copyright_sign">&#169;</span>2023:~> </label>
     <input id="cmd_input" type="text" autofocus spellcheck="false" autocomplete="off"/>`;
 
    
@@ -60,7 +60,7 @@ document.onmousedown = (e) => {
 
       switch (cmd_input) {
         case "help":         
-          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
             <br><p id="result">${help}</p>`;
             container_terminal.insertBefore(new_cmd_div, output);
             clear_input();
@@ -70,7 +70,7 @@ document.onmousedown = (e) => {
           //_______________________________________________//
           case "github":  // will redirect to my github page  
           window.open("https://github.com/rockstartraders");  
-          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
           <br><p id="result">${github}</p>`;       
             container_terminal.insertBefore(new_cmd_div, output);
             clear_input();           
@@ -85,7 +85,7 @@ document.onmousedown = (e) => {
 
         //_______________________________________________//
         case "cv":  // CV command
-        new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+        new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
         <br><p id="result">${cv}</p>`;
         container_terminal.insertBefore(new_cmd_div, output);   
         clear_input();
@@ -130,7 +130,7 @@ document.onmousedown = (e) => {
         case "head": 
         case "top":
         case "tail":  
-        new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+        new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
         <br><p id="result">${generic_unix}</p>`;
         container_terminal.insertBefore(new_cmd_div, output);   
         clear_input();
@@ -223,7 +223,7 @@ document.onmousedown = (e) => {
                     allowOutsideClick:false,      
                     timer: 2000    // end of sweet alert message
                   }) .then(function (){
-                    new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+                    new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
                     <br><p id="result">${email}</p>`;
                     container_terminal.insertBefore(new_cmd_div, output);   
                     clear_input();
@@ -245,7 +245,7 @@ document.onmousedown = (e) => {
       case "my-pse-info":  // Project ==> My PSE INFO.
       case "mypseinfo":  // Project ==> My PSE INFO.
       
-       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
        <br><p id="result">${mypseinfo}</p>`;
        container_terminal.insertBefore(new_cmd_div, output);   
        clear_input();  
@@ -253,7 +253,7 @@ document.onmousedown = (e) => {
         //_______________________________________________//
 
       case "jconverter":  // Project ==> Jengs currency converter
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${jconverter}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -262,7 +262,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
     
       case "alt2":  // Project ==> alt2
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${alt2}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
 
@@ -272,7 +272,7 @@ document.onmousedown = (e) => {
     //_______________________________________________//  
           
       case "net2shell":  // Project ==> net2shell
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${net2shell}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -282,7 +282,7 @@ document.onmousedown = (e) => {
 
       case "psecli":
       case "pse-cli":  // 
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${pse_cli}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -292,7 +292,7 @@ document.onmousedown = (e) => {
 
       case "hashcheck":
       case "hash-check":  
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${hash_check}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -304,7 +304,7 @@ document.onmousedown = (e) => {
       case "my-cve-info":
       case "my-cve":
       case "cve":  // P
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${my_cve}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -316,7 +316,7 @@ document.onmousedown = (e) => {
       case "jmplayer": 
       case "jamesmediaplayer": 
       case "james-media-player":  
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${james_media_player}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -325,7 +325,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "centcal":  
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${centcal}</p>`;
       window.open("https://centcal.netlify.app/");
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -336,7 +336,7 @@ document.onmousedown = (e) => {
 
       case "steg":  
       case "steganography":
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${steg}</p>`;
       window.open("https://basic-steganography.netlify.app/");
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -349,7 +349,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "secret-conversation":        
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${secretconversation}</p>`;
       window.open("https://secret-conversation.netlify.app/");
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -360,7 +360,7 @@ document.onmousedown = (e) => {
 
       
       case "programming":  // COmmand for programming
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${programming}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -369,7 +369,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "about":  // COmmand for programming
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${about}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -379,7 +379,7 @@ document.onmousedown = (e) => {
 
       case "project":  // COmmand for projects
       case "projects":  // COmmand for projects
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${projects}</p>`;
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
@@ -388,7 +388,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "ip":  // COmmand for projects
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${ip}</p>`;            
       
       container_terminal.insertBefore(new_cmd_div, output);   
@@ -398,7 +398,7 @@ document.onmousedown = (e) => {
       //_______________________________________________//  
 
       case "quote":  // COmmand for projects
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${quote}</p>`;         
       container_terminal.insertBefore(new_cmd_div, output);     
 
@@ -410,7 +410,7 @@ document.onmousedown = (e) => {
 
       case "xtra":  // COmmand for extra
       case "extra":  // COmmand for extra
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${extra}</p>`;         
       container_terminal.insertBefore(new_cmd_div, output);          
       clear_input();       
@@ -419,7 +419,7 @@ document.onmousedown = (e) => {
       //_______________________________________________// 
 
       case "weather":  // COmmand for extra
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${weathernow}</p>`;         
       container_terminal.insertBefore(new_cmd_div, output);
       getLocation();  //  get geo location firsth then will run the weather API.
@@ -430,7 +430,7 @@ document.onmousedown = (e) => {
 
       case "skills":  // COmmand for skills
       case "skill":
-      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${skills}</p>`;         
       container_terminal.insertBefore(new_cmd_div, output);          
       clear_input();       
@@ -451,7 +451,7 @@ document.onmousedown = (e) => {
       
         // Default catch handler
         default:
-          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2021:~> <span id="input_white_color">${initial_input}</span></label>
+          new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
           <br><p id="result"><br>The command <b>${initial_input}</b> is not recognized, Please check your spelling or type <b>help</b> for command reference.</p>`;
           container_terminal.insertBefore(new_cmd_div, output);   
           clear_input();
