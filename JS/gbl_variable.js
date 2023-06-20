@@ -65,7 +65,8 @@ var generic_unix=`<P id="generic_unix_output">Wow a <b>UNIX command</b> indeed b
 
 // Email command
 
-var email=`<P id="email_output">Thank you so much for sparing some time communicating with me. <br> <br id="linebreak_notvisible">I really do appreciate it and I will get back to you as soon as possible.</P>`;
+var email=`<P id="email_output">Thank you so much for spending some time communicating with me. <br> <br id="linebreak_notvisible">I really do appreciate it and I will get back to you as soon as possible.</P>`;
+var emailerror=`<P id="email_output">Sorry but you entered an invalid email address.<br>You may want to try it again ?</P>`;
 
 var mypseinfo = `
 <div id="app_made">
@@ -198,10 +199,48 @@ var steg = `
 <div id="app_made">
 <p id="app_name"><span id="main_title_color_appname">steg</span> - a.k.a Steganography is the technique of hiding secret data within an ordinary, non-secret, file or message (example is an Image) in order to avoid detection. </p>
 <br>  
-<p id="tech_used">New tab will open since this is a website.</p>   
+<p id="tech_used">New tab will open since this is a website.</p>
 </div>
 `;  // end of Steganography
 
+var iplookup = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">iplookup</span> - Is just another IP look up tool, similar to other websites or apps you can see via the internet, so nothing's fancy. </p>
+<br>  
+
+</div>
+`;  // end of Iplookup
+
+var kjumble = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">kjumble</span> or <span id="main_title_color_appname">kgame</span> - A small game I created for Vocab purposes since i studied Korean/Hangeul back then.</p>
+<br>  
+<p id="tech_used">New tab will open since this is a website.</p>   
+</div>
+`;  // end of kjumble
+
+var spanishly = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">spanishly</span> - A  small game I created for Vocab , verb conjugation (present), etc. specific for Spanish Language since I am still learning/studying it.</p>
+<p id="tech_used">New tab will open since this is a website.</p>
+<br>  
+<p id="tech_used">Please note that this is an ongoing project still.</p>   
+ 
+</div>
+`;  // end of Spanishly
+
+var seismic = `
+  
+<div id="app_made">
+<p id="app_name"><span id="main_title_color_appname">seismic</span> - Earthquake data and visualization using USGS data and Leaflet.</p>
+<br>  
+
+ 
+</div>
+`;  // end of Spanishly
 
 var secretconversation = `
   
@@ -327,10 +366,17 @@ Example: <span id="main_title_color_appname">alt2</span></p><br>
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">centcal</span> - A simple percentage calculator I created for my Mom.</p>
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">secret-conversation</span> - A web app that will convert Plain text value to an encrypted text & vice versa.</p>
 <p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">steg</span> - Hide secret message into an image.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">iplookup</span> - Is just another IP look up tool created by me.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">kjumble</span> or <span id="main_title_color_appname">kgame</span> - A small game I created for Vocab purposes since i studied Korean/Hangeul back then.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">seismic</span> - Earthquake data and visualization using USGS data and Leaflet.</p>
+<p id="app_nameprojects_made_jmplayer"><span id="main_title_color_appname">spanishly</span> - A  small game I created for Vocab , verb conjugation (present), etc. specific for Spanish Language since I am still learning/studying it.</p>
 <p id="app_nameprojects_made_footer_note">I still have a lot of projects not included here, Please feel free to visit my <span id="main_title_color">github</span> page for reference.</p>
 <br>
 </div> <!--End of projects_made div-->
 `; // End of Projects command
+
+
+
 
 
 var ip=`
@@ -395,7 +441,10 @@ var skills = `
 <p id="app_nameprojects_made_psecli"><span id="main_title_color_appname">Cooking</span> (Not tech relevant but this is my favorite skill among others 😁).</p>   
 <br>
 
+
 </div> <!--End of projects_made div-->
+<P id="help_footer_note"> Please note that the above information or notes are <b>NOT commands</b>.</P>  
+
 `; // end of Extra command
 
 

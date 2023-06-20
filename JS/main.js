@@ -70,6 +70,16 @@ document.onmousedown = (e) => {
           //_______________________________________________//
           case "github":  // will redirect to my github page  
           window.open("https://github.com/rockstartraders");  
+
+          // new WinBox({
+          //   title: "My Github Repository",
+          //   x: "center",
+          //   y: "center",
+          //   width: "50%",
+          //   height: "65%",
+          //   border: "0.3em",
+          //   url: "https://github.com/embed/rockstartraders"
+          // });
           new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
           <br><p id="result">${github}</p>`;       
             container_terminal.insertBefore(new_cmd_div, output);
@@ -152,7 +162,7 @@ document.onmousedown = (e) => {
         
         break; 
          //_______________________________________________//
-         case "email":  // exit  with sweet alert message
+         case "email":  // exit  with sweet alert message // remove
       
       
       Swal.fire({
@@ -171,14 +181,20 @@ document.onmousedown = (e) => {
            if (valid_email === false) {
             
             Swal.fire({
-              title: 'Please Enter a Valid Email',               
+              title: 'Please enter a valid email',               
               icon: 'error',
               // confirmButtonText: 'Got It',
               showConfirmButton:false,
               allowOutsideClick:false,
               timer: 2000
                             
-            }) // end of IF statement for valid_email 
+            }).then(function (){
+              new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+              <br><p id="result">${emailerror}</p>`;
+              container_terminal.insertBefore(new_cmd_div, output);   
+              clear_input();
+            }) // end of function after sweet alert || will display text after
+            // end of IF statement for valid_email 
 
 
            } else {
@@ -194,26 +210,13 @@ document.onmousedown = (e) => {
                 
                 var templateParams = {
                   from_name: visitors_email,
-                  message: document.getElementById('swal2-input').value
+                  message: document.getElementById('swal2-input').value,                 
+                 
               };
-
-                // OLD FUNCTION AND NO LONGER WORKING
-                // var textarea_email = document.getElementById('swal2-input').value;
-                // email sending function using smtp JS                                   
-
-                //Email.send
-                   
-                  //
-                    // SecureToken: "34022397-ca6a-49c9-9034-26fadc6ef4cb",     // Working from mailtrap ==> no more                  
-                    // SecureToken: "3800d57c-de68-4815-927d-b4ab65f502c3",    // new gmail account     
-                    // SecureToken: "ef1dd425-64f1-49ec-bfcc-e55533fa0006", // this is elastic email / https://elasticemail.com/account#/settings/new/create-smtp 
-                    // To : 'jamespaulespea@gmail.com',
-                    // From : 'espenajameswebsite@gmail.com',
-                    // Subject : "Message from your Portfolio",
-                    // Body :  "<br><br><br>"+ "Message from: " + visitors_email + "<br><br>" + "Message is:"+ "<br>" + textarea_email
+              // emailjs.send('service_47qtp6g', 'template_cb3pmcq', templateParams)
 
                 // this is the new parameter using emailjs 
-                emailjs.send("Jeng","template_cb3pmcq", templateParams).then(function(){
+                emailjs.send('service_47qtp6g', 'template_cb3pmcq', templateParams).then(function(){
 
                     Swal.fire({
                     position: 'center',
@@ -240,6 +243,7 @@ document.onmousedown = (e) => {
       
       break; 
        //_______________________________________________//
+
 
       case "pseinfo":  // Project ==> My PSE INFO.
       case "my-pse-info":  // Project ==> My PSE INFO.
@@ -339,12 +343,98 @@ document.onmousedown = (e) => {
       new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
       <br><p id="result">${steg}</p>`;
       window.open("https://basic-steganography.netlify.app/");
+
+      // new WinBox({
+      //       title: "Welcome To My Online Steganography Tool",
+      //       x: "center",
+      //       y: "center",
+      //       width: "80%",
+      //       height: "85%",
+      //       border: "0.3em",
+      //       url: "https://basic-steganography.netlify.app/"
+      //     });
+
       container_terminal.insertBefore(new_cmd_div, output);   
       clear_input();  
       break; 
 
       //_______________________________________________//  
 
+      case "iplookup":  
+      case "ip-lookup":
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${iplookup}</p>`;
+      // window.open("https://ip-lookup-by-james.netlify.app/index.html");
+
+      new WinBox({
+            title: "IP LOOK UP by James",            
+            x: "center",
+            y: "center",
+            width: "80%",
+            height: "85%",            
+            url: "https://ip-lookup-by-james.netlify.app/index.html",
+            
+          });
+
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+        
+      //_______________________________________________//  
+
+      
+      case "kjumble":  
+      case "kgame":
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${kjumble}</p>`;
+      window.open("https://k-jumble.netlify.app/");
+
+
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+        
+      //_______________________________________________//  
+
+      case "spanishly":  
+      case "spanish":
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${spanishly}</p>`;
+      window.open("https://spanishly.netlify.app/");
+
+      
+
+
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();  
+      break; 
+        
+      //_______________________________________________//  
+
+      case "equake":  
+      case "seismic":
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${spanishly}</p>`;
+      // window.open("https://spanishly.netlify.app/");
+
+      
+      new_cmd_div.innerHTML =` <label id="lbl_cmd">my_portfolio<span id="copyright_sign">&#169;</span>2023:~> <span id="input_white_color">${initial_input}</span></label>
+      <br><p id="result">${seismic}</p>`;
+      // window.open("https://ip-lookup-by-james.netlify.app/index.html");
+
+      new WinBox({
+            title: "Seismic-Info.",            
+            x: "center",
+            y: "center",
+            width: "80%",
+            height: "85%",           
+            url: "https://seismic-info.netlify.app/",
+            
+          });
+
+      container_terminal.insertBefore(new_cmd_div, output);   
+      clear_input();   
+      break; 
         
       //_______________________________________________//  
 

@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
 
 
 
@@ -88,12 +87,13 @@ body{
    overflow-wrap: break-word;   
     /* color: #C8C8C8; */
     color: #FDFBF9;
-    /* font-family: 'Righteous', cursive; */
-    /* font-family: 'Comfortaa', cursive; */
-    font-family: 'Monoton', monospace !important;
+    
+    /* font-family: 'Monoton', monospace !important; */
     /* font-size: clamp(35px, 4.2vw, 5vw);  */
-    font-size: 75px;
-    letter-spacing: 0.3vw;
+    /* font-family: 'Azeret Mono', monospace; */
+    font-family: 'Bruno Ace', monospace;
+    font-size: 65px;
+    letter-spacing: 1px;
     font-weight: 400;
       
 }
@@ -1137,6 +1137,7 @@ All output will be via innerHTML */
   /* font-family: 'Inconsolata', monospace;   */
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Quicksand', sans-serif;
+  /* font-family: 'Azeret Mono', monospace; */
   letter-spacing: 3px !important;
 }
 
@@ -1160,9 +1161,10 @@ All output will be via innerHTML */
   /* font-family: 'Inconsolata', monospace; */
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  /* font-family: 'Azeret Mono', monospace; */
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform:capitalize;
 }
 
 /* this is for ICON for info */
@@ -1183,9 +1185,25 @@ All output will be via innerHTML */
 
 
 
+/* #input_email{
 
+  margin-top: 14px;
+  font-family: 'Azeret Mono', monospace;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1rem;
+}
 
+#email{
+  height: 1.5rem;
+  background-color: #FDFBF9;
+  border-radius: 2px;
+} */
 
+/* this is for WInbox*/
+/* .winbox{
+  background: #7b7c7c !important;
+} */
 
 
 
@@ -1216,7 +1234,7 @@ All output will be via innerHTML */
   #banner {
     
     color: #FDFBF9;    
-    font-family: 'Monoton', monospace !important;
+    font-family: 'Azeret Mono', monospace;
     font-size: 14vw;
     letter-spacing: 0.3vw;
     font-weight: 500;
